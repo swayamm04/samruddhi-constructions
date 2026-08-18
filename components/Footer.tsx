@@ -24,9 +24,10 @@ export default function Footer() {
     <footer id="contact" className={styles.footer}>
       <div className={`container ${styles.footerGrid}`}>
         <div className={styles.brand}>
-          <h2 className={styles.logo}>Samruddhi <br/> Constructions</h2>
+          <h2 className={styles.logo}>Samruddhi <br/><span style={{ fontSize: "0.5em", letterSpacing: "1px", fontWeight: "normal" }}>Architects | Construction | Interiors</span></h2>
           <p className={styles.description}>
-            Redefining architecture with a blend of luxury and sustainable practices.
+            DESIGNING SPACES. BUILDING TRUST.<br />
+            YOUR VISION. OUR EXPERTISE. BUILT TO PERFECTION.
           </p>
         </div>
         
@@ -49,7 +50,7 @@ export default function Footer() {
             </li>
             <li className={styles.contactItem}>
               <Phone size={18} />
-              <span>+91 98765 43210</span>
+              <span>9483106164 / 9481936167</span>
             </li>
             <li className={styles.contactItem}>
               <Mail size={18} />

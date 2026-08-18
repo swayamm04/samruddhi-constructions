@@ -54,7 +54,7 @@ export default function ProjectsPage() {
             <div className="header-top-inner d-flex flex-column flex-md-row justify-content-between align-items-center">
               <div className="header-contact">
                 <ul className="d-flex white flex-wrap">
-                  <li className="me-3 pe-3 border-end border-lightgrey small"><a href="tel:+33877554332"><i className="fa fa-phone me-2" aria-hidden="true"></i>+33 877 554 332</a></li>
+                  <li className="me-3 pe-3 border-end border-lightgrey small"><a href="tel:+919483106164"><i className="fa fa-phone me-2" aria-hidden="true"></i>9483106164 / 9481936167</a></li>
                   <li className="me-3 pe-3 border-end border-lightgrey small"><a href="mailto:info@website.com"><i className="fa fa-envelope-o me-2" aria-hidden="true"></i>info@website.com</a></li>
                   <li className="small"><i className="fa fa-clock-o me-2" aria-hidden="true"></i>Mon - Fri: 9:00 - 18:30</li>
                 </ul>
@@ -77,7 +77,7 @@ export default function ProjectsPage() {
                 <div className="col-xl-2 col-md-3 col-6 order-1">
                   <div className="header-logo">
                 <a href="index.html" className="text-decoration-none">
-                  <h4 className="mb-0 fw-bold text-uppercase text-nowrap" style={{ color: "#c19a5b" }}>Samruddhi Constructions</h4>
+                  <h4 className="mb-0 fw-bold text-uppercase text-nowrap" style={{ color: "#c19a5b", lineHeight: "1.2" }}>Samruddhi <br /><span style={{ fontSize: "0.5em", letterSpacing: "1px", color: "#f8f9fa", fontWeight: "normal" }}>Architects | Construction | Interiors</span></h4>
                 </a>
               </div>
                 </div>
@@ -292,7 +292,7 @@ export default function ProjectsPage() {
                 </div>
                 <div className="col-lg-9 col-md-8">
                   <div className="footer-top-right">
-                    <p className="white mb-0 h6 fw-normal fst-italic">“Building trust through quality craftsmanship and innovative design, creating spaces that inspire and endure.”</p>
+                    <p className="white mb-0 h6 fw-normal fst-italic">“DESIGNING SPACES. BUILDING TRUST. YOUR VISION. OUR EXPERTISE. BUILT TO PERFECTION.”</p>
                   </div>
                 </div>
               </div>
@@ -301,7 +301,7 @@ export default function ProjectsPage() {
               <div className="row gx-lg-5 gy-5">
                 <div className="col-lg-4">
                   <div className="footer-info">
-                    <p>Samruddhi Constructions is a premier architecture and interior design firm.</p>
+                    <p>Samruddhi provides comprehensive solutions across Design, Build, Interiors, and Consultancy.</p>
                     <p className="mb-4">We specialize in crafting sustainable, luxurious spaces tailored to our clients unique lifestyles. </p>
                     <div className="footer-socials mb-4">
                       <ul className="d-flex gap-1 my-2 justify-content-center justify-content-md-start">
@@ -321,7 +321,7 @@ export default function ProjectsPage() {
                       <div className="mb-3">
                         <ul className="align-items-center d-flex gap-2 justify-content-center justify-content-md-start">
                           <li className="h5 mb-0"><i className="fa fa-phone me-2" aria-hidden="true"></i></li>
-                          <li>+569 2316 2156</li>
+                          <li>9483106164 / 9481936167</li>
                         </ul>
                       </div>
                       <div>
@@ -384,7 +384,7 @@ export default function ProjectsPage() {
             </div>
             <div className="modal-body mt-5 mx-3">
               <div className="logo mb-4">
-                <h4 className="mb-0 fw-bold text-uppercase text-nowrap" style={{ color: "#c19a5b" }}>Samruddhi Constructions</h4>
+                <h4 className="mb-0 fw-bold text-uppercase text-nowrap" style={{ color: "#c19a5b", lineHeight: "1.2" }}>Samruddhi <br /><span style={{ fontSize: "0.5em", letterSpacing: "1px", color: "#f8f9fa", fontWeight: "normal" }}>Architects | Construction | Interiors</span></h4>
               </div>
               <div className="info mb-4">
                 <p>Samruddhi Constructions has been at the forefront of innovative architecture and construction for over three decades. We believe in creating spaces that not only look beautiful but also enhance the quality of life for those who use them.</p>
@@ -400,7 +400,7 @@ export default function ProjectsPage() {
                 <div className="mb-2 pb-2 border-bottom border-grey">
                   <ul className="align-items-center d-flex gap-2">
                     <li className="h5 mb-0"><i className="fa fa-phone me-2" aria-hidden="true"></i></li>
-                    <li>+569 2316 2156</li>
+                    <li>9483106164 / 9481936167</li>
                   </ul>
                 </div>
                 <div>
