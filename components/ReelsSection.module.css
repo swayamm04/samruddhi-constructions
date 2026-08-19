@@ -1,0 +1,227 @@
+.section {
+  padding: 80px 0;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 800;
+  color: #111;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+.carouselWrapper {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.navButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+.navButton:hover {
+  background: #f8f9fa;
+  transform: translateY(-50%) scale(1.05);
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  perspective: 1000px;
+}
+
+.reelCard {
+  position: absolute;
+  top: 0;
+  width: 300px;
+  height: 480px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Positioning Classes */
+.center {
+  left: 50%;
+  transform: translateX(-50%) scale(1);
+  opacity: 1;
+  z-index: 3;
+  filter: blur(0);
+}
+
+.left {
+  left: 15%;
+  transform: translateX(-50%) scale(0.85);
+  opacity: 0.6;
+  z-index: 2;
+  filter: blur(3px);
+  pointer-events: none;
+}
+
+.right {
+  left: 85%;
+  transform: translateX(-50%) scale(0.85);
+  opacity: 0.6;
+  z-index: 2;
+  filter: blur(3px);
+  pointer-events: none;
+}
+
+.hidden {
+  left: 50%;
+  transform: translateX(-50%) scale(0.5);
+  opacity: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Reel Internal UI */
+.reelHeader {
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.profileInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profilePic {
+  width: 32px;
+  height: 32px;
+  background-color: #eee;
+  border-radius: 50%;
+  background-image: url('/logo.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.profileText {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.username {
+  font-size: 13px;
+  font-weight: 700;
+  color: #262626;
+  line-height: 1.2;
+}
+
+.audio {
+  font-size: 11px;
+  color: #8e8e8e;
+}
+
+.viewProfileBtn {
+  background: #0095f6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.reelVideo {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.videoOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 20px;
+}
+
+.videoTitle {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.playButton {
+  width: 60px;
+  height: 60px;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(4px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: auto;
+  margin-top: 20px;
+  border: 2px solid white;
+}
+
+.watchText {
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .left, .right { opacity: 0; }
+  .carousel { height: 420px; }
+  .reelCard { width: 260px; height: 400px; }
+  .carouselWrapper { padding: 0 40px; }
+}

@@ -1,6 +1,7 @@
 
 "use client";
 import { useEffect, useRef } from 'react';
+import Navbar from '../../components/Navbar';
 
 export default function ProjectsPage() {
   const initialized = useRef(false);
@@ -48,77 +49,7 @@ export default function ProjectsPage() {
 
 
       {/* Header Section Starts */}
-      <header className="position-relative z-3 bg-dark">
-        <div className="header-top py-3">
-          <div className="container">
-            <div className="header-top-inner d-flex flex-column flex-md-row justify-content-between align-items-center">
-              <div className="header-contact">
-                <ul className="d-flex white flex-wrap">
-                  <li className="me-3 pe-3 border-end border-lightgrey small"><a href="tel:+919483106164"><i className="fa fa-phone me-2" aria-hidden="true"></i>9483106164 / 9481936167</a></li>
-                  <li className="me-3 pe-3 border-end border-lightgrey small"><a href="mailto:info@website.com"><i className="fa fa-envelope-o me-2" aria-hidden="true"></i>info@website.com</a></li>
-                  <li className="small"><i className="fa fa-clock-o me-2" aria-hidden="true"></i>Mon - Fri: 9:00 - 18:30</li>
-                </ul>
-              </div>
-              <div className="social-links">
-                <ul className="d-flex gap-2">
-                  <li><a href=""><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
-                  <li><a href=""><i className="fa fa-twitter" aria-hidden="true"></i></a></li>
-                  <li><a href=""><i className="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                  <li><a href=""><i className="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="header-nav header-nav-menu" id="header-nav-menu">
-          <div className="container">
-            <div className="header-nav-inner border-top border-light py-3">
-              <div className="row gx-xl-5 align-items-center justify-content-between">
-                <div className="col-xl-2 col-md-3 col-6 order-1">
-                  <div className="header-logo">
-                <a href="index.html" className="text-decoration-none">
-                  <h4 className="mb-0 fw-bold text-uppercase text-nowrap" style={{ color: "#c19a5b", lineHeight: "1.2" }}>Samruddhi <br /><span style={{ fontSize: "0.5em", letterSpacing: "1px", color: "#f8f9fa", fontWeight: "normal" }}>Architects | Construction | Interiors</span></h4>
-                </a>
-              </div>
-                </div>
-                <div className="col-xl-7 col-0 order-3 order-xl-2">
-                  <div className="header-nav">
-                    <div className="navbar-collapse " id="bs-example-navbar-collapse-1">
-                      <ul className="navbar-nav flex-row align-items-center justify-content-center" id="responsive-menu">
-                        <li className="nav-item">
-                          <a className="nav-link text fw-medium text-uppercase" href="/">
-                            Home
-                          </a>
-                        </li>
-                        <li className="nav-item">
-                          <a className="nav-link text fw-medium active text-uppercase" href="/projects">
-                            Projects
-                          </a>
-                        </li>
-                        <li className="nav-item">
-                          <a className="nav-link text fw-medium text-uppercase" href="/contact">
-                            Contact
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-xl-3 col-md-4 col-0  order-2 order-xl-3">
-                  <div className="header-icons d-none d-xl-block">
-                    <ul className="d-flex align-items-center gap-4  justify-content-xl-end">
-                      <li><a className="position-relative" data-bs-toggle="modal" data-bs-target="#interealModal"><i className="fa fa-info-circle" aria-hidden="true"></i>
-                      </a></li>
-                      <li><a href="consultation.html" className="btn-secondary">Get A Qoute</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div id="slicknav-mobile"></div>
-            </div>
-          </div>
-        </div>
-      </header>
+      <Navbar />
       {/* Header Section Ends */}
 
       {/* Page Banner Starts */}

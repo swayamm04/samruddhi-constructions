@@ -1,7 +1,10 @@
-
 "use client";
 import { useEffect, useRef } from 'react';
+import Navbar from '../components/Navbar';
 import ServicesAccordion from '../components/ServicesAccordion';
+import CounterSection from '../components/CounterSection';
+import LoanSupportSection from '../components/LoanSupportSection';
+import ReelsSection from '../components/ReelsSection';
 export default function PageContent() {
   const initialized = useRef(false);
 
@@ -48,107 +51,37 @@ export default function PageContent() {
 
 
       {/* Header Section Starts */}
-      <header className="position-relative z-3">
-        <div className="header-top py-3">
-          <div className="container">
-            <div className="header-top-inner d-flex flex-column flex-md-row justify-content-between align-items-center">
-              <div className="header-contact">
-                <ul className="d-flex white flex-wrap">
-                  <li className="me-3 pe-3 border-end border-lightgrey small"><a href="tel:+919483106164"><i className="fa fa-phone me-2" aria-hidden="true"></i>9483106164 / 9481936167</a></li>
-                  <li className="me-3 pe-3 border-end border-lightgrey small"><a href="mailto:info@website.com"><i className="fa fa-envelope-o me-2" aria-hidden="true"></i>info@website.com</a></li>
-                  <li className="small"><i className="fa fa-clock-o me-2" aria-hidden="true"></i>Mon - Fri: 9:00 - 18:30</li>
-                </ul>
-              </div>
-              <div className="social-links">
-                <ul className="d-flex gap-2">
-                  <li><a href=""><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
-                  <li><a href=""><i className="fa fa-twitter" aria-hidden="true"></i></a></li>
-                  <li><a href=""><i className="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                  <li><a href=""><i className="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="header-nav header-nav-menu" id="header-nav-menu">
-          <div className="container">
-            <div className="header-nav-inner border-top border-light py-3">
-              <div className="row gx-xl-5 align-items-center justify-content-between">
-                <div className="col-xl-2 col-md-3 col-6 order-1">
-                  <div className="header-logo">
-                <a href="index.html" className="text-decoration-none">
-                  <h4 className="mb-0 fw-bold text-uppercase text-nowrap" style={{ color: "#c19a5b", lineHeight: "1.2" }}>Samruddhi <br /><span style={{ fontSize: "0.5em", letterSpacing: "1px", color: "#f8f9fa", fontWeight: "normal" }}>Architects | Construction | Interiors</span></h4>
-                </a>
-              </div>
-                </div>
-                <div className="col-xl-7 col-0 order-3 order-xl-2">
-                  <div className="header-nav">
-                    <div className="navbar-collapse " id="bs-example-navbar-collapse-1">
-                      <ul className="navbar-nav flex-row align-items-center justify-content-center" id="responsive-menu">
-                        <li className="nav-item">
-                          <a className="nav-link text fw-medium active text-uppercase" href="/">
-                            Home
-                          </a>
-                        </li>
-                        <li className="nav-item">
-                          <a className="nav-link text fw-medium text-uppercase" href="/projects">
-                            Projects
-                          </a>
-                        </li>
-                        <li className="nav-item">
-                          <a className="nav-link text fw-medium text-uppercase" href="/contact">
-                            Contact
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-xl-3 col-md-4 col-0  order-2 order-xl-3">
-                  <div className="header-icons d-none d-xl-block">
-                    <ul className="d-flex align-items-center gap-4  justify-content-xl-end">
-                      <li><a className="position-relative" data-bs-toggle="modal" data-bs-target="#interealModal"><i className="fa fa-info-circle" aria-hidden="true"></i>
-                      </a></li>
-                      <li><a href="consultation.html" className="btn-secondary">Get A Qoute</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div id="slicknav-mobile"></div>
-            </div>
-          </div>
-        </div>
-      </header>
+      <Navbar />
       {/* Header Section Ends */}
 
       {/* Banner Section Starts */}
       <section className="banner p-0 position-relative">
         <div className="container-fluid p-0">
           <div className="banner-slider">
-            <div className="slide position-relative" style={{ backgroundImage: "url('" + "/image/pexels-jvdm-1457842.jpg" + "')" }}>
+            <div className="slide position-relative" style={{ backgroundImage: "url('" + "/image/pexels-jvdm-1457842.jpg" + "')", backgroundPosition: "center", backgroundSize: "cover" }}>
               <div className="overlay"></div>
               <div className="container white position-absolute start-50 translate-middle text-center">
-                <div className="banner-info w-xl-75 w-xxl-50 m-auto mb-2">
+                <div className="banner-info w-xl-75 w-xxl-50 m-auto mb-2" style={{ marginTop: '10vh' }}>
                   <h1 className="white">Transform Your Space into Timeless Beauty</h1>
                   <p className="mb-5 fst-italic" style={{ fontSize: "18px" }}>Bespoke interiors crafted to reflect your personality and lifestyle.</p>
                   <a href="contact.html" className="btn-secondary bg-transparent border-2 border text-white border-white">Learn More</a>
                 </div>
               </div>
             </div>
-            <div className="slide position-relative" style={{ backgroundImage: "url('" + "/image/apartment-with-pop-of-yellow-2021-08-26-15-43-11-utc.jpg" + "')" }}>
+            <div className="slide position-relative" style={{ backgroundImage: "url('" + "/image/apartment-with-pop-of-yellow-2021-08-26-15-43-11-utc.jpg" + "')", backgroundPosition: "center", backgroundSize: "cover" }}>
               <div className="overlay"></div>
               <div className="container white position-absolute start-50 translate-middle text-center">
-                <div className="banner-info w-xl-75 w-xxl-50 m-auto mb-2">
+                <div className="banner-info w-xl-75 w-xxl-50 m-auto mb-2" style={{ marginTop: '10vh' }}>
                   <h1 className="white">Designing for Today, Building for Tomorrow</h1>
                   <p className="mb-5 fst-italic" style={{ fontSize: "18px" }}>Eco-friendly materials. Smart design solutions. Responsible living.</p>
                   <a href="contact.html" className="btn-secondary bg-transparent border-2 border text-white border-white">Learn More</a>
                 </div>
               </div>
             </div>
-            <div className="slide position-relative" style={{ backgroundImage: "url('" + "/image/bedroom-interior-design-3d-rendering-2021-08-26-18-15-32-utc1.jpg" + "')" }}>
+            <div className="slide position-relative" style={{ backgroundImage: "url('" + "/image/bedroom-interior-design-3d-rendering-2021-08-26-18-15-32-utc1.jpg" + "')", backgroundPosition: "center", backgroundSize: "cover" }}>
               <div className="overlay"></div>
               <div className="container white position-absolute start-50 translate-middle text-center">
-                <div className="banner-info w-xl-75 w-xxl-50 m-auto mb-2">
+                <div className="banner-info w-xl-75 w-xxl-50 m-auto mb-2" style={{ marginTop: '10vh' }}>
                   <h1 className="white">Your Dream Space, Designed & Delivered</h1>
                   <p className="mb-5 fst-italic" style={{ fontSize: "18px" }}>From concept to completion — we handle every detail with care.</p>
                   <a href="contact.html" className="btn-secondary bg-transparent border-2 border text-white border-white">Learn More</a>
@@ -187,7 +120,7 @@ export default function PageContent() {
         <div className="container">
           <div className="why-us-inner position-relative pt-2 pt-lg-5 mt-2 mt-lg-0">
             <span className="heading-clip d-none d-lg-block">Why Us</span>
-            
+
             {/* Mobile Title */}
             <div className="why-us-title text-center d-block d-lg-none mb-4 pt-3">
               <span className="teko h5 secondary">Why Choose Us</span>
@@ -219,7 +152,7 @@ export default function PageContent() {
                     <div className="sperator bg-secondary mt-1 mb-2" style={{ width: "40px", height: "2px" }}></div>
                     <h2 className="mb-3">A Behind-the-Scenes Look at <span className="secondary">Our Agency</span></h2>
                   </div>
-                  
+
                   <div className="why-us-desc mb-4 text-center text-lg-start">
                     <p className="fs-6 fs-lg-5">With decades of experience, we provide unparalleled expertise in modern construction and interior design.</p>
                     <p className="mb-0 text-muted" style={{ fontSize: "0.85rem" }}>From initial concept to final execution, we handle every detail with precision and care, ensuring a seamless and stress-free experience for our clients.</p>
@@ -359,6 +292,8 @@ export default function PageContent() {
         </div>
       </section>
 
+      <CounterSection />
+
       <ServicesAccordion />
 
       {/* Partners Marquee Starts */}
@@ -392,6 +327,10 @@ export default function PageContent() {
       </section>
       {/* Partners Marquee Ends */}
 
+      <LoanSupportSection />
+
+      <ReelsSection />
+
       <section className="project-contact-section bg-secondarylight pb-5 pt-5">
         <div className="container">
           <div className="project-inner">
@@ -424,8 +363,8 @@ export default function PageContent() {
               <div className="row align-items-center gx-lg-5 gy-4">
                 <div className="col-lg-3 col-md-4">
                   <div className="footer-top-left">
-                <h4 className="mb-0 fw-bold white text-uppercase text-nowrap">Samruddhi Constructions</h4>
-              </div>
+                    <h4 className="mb-0 fw-bold white text-uppercase text-nowrap">Samruddhi Constructions</h4>
+                  </div>
                 </div>
                 <div className="col-lg-9 col-md-8">
                   <div className="footer-top-right">
